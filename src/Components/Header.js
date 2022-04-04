@@ -1,7 +1,14 @@
-const Header = () => {
-    return(
-        <h1>Header</h1>
-    )
-}
+import "./Header.css";
 
-export default Header
+const Header = () => {
+  return 
+  <div className="Header">
+      <ul>
+          <li>
+              Home
+          </li>
+      </ul>
+  </div>;
+};
+
+export default Header;
