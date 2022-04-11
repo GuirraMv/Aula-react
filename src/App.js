@@ -1,12 +1,19 @@
 import "./App.css";
-import Header from "./Components/Header";
+import ApiRequest from "./Components/Demo/ApiRequest";
 
 function App() {
   return (
-  <>
-  <Header />
-  <>
-  )
+    <>
+      <h1>Clean</h1>
+
+      <div className="App">
+        <header className="App-header">
+          <p>Alterei no Codesandbox</p>
+        </header>
+        <ApiRequest />
+      </div>
+    </>
+  );
 }
 
 export default App;
