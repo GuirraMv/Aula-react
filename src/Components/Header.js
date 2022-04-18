@@ -1,14 +1,15 @@
 import "./Header.css";
 
 const Header = () => {
-  return 
+  return(
   <div className="Header">
       <ul>
           <li>
               Home
           </li>
       </ul>
-  </div>;
-};
+  </div>
+  )
+}
 
 export default Header;
