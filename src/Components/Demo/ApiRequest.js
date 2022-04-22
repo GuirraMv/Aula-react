@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+/*import { useEffect, useState } from "react";
 
 const ApiRequest = () => {
   const [paises, setPaises] = useState(null);
@@ -19,4 +19,4 @@ const ApiRequest = () => {
   );
 };
 
-export default ApiRequest;
+export default ApiRequest;*/
