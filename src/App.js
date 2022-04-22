@@ -12,7 +12,6 @@ function App() {
         <header className="Header">
           <Logo />
           <Header/>
-          
         </header>
       </div>
     </>
