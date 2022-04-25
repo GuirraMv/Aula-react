@@ -1,23 +1,21 @@
-//arquivo criado só como exemplo, não faz parte do projeto
-
-//importando com css
-import "./addimagens.css";
-//importar imagens jpeg, png, gif, svg, jpeg, webp
-import mountain from "../asset/img/mountain.webp" ///exemplo imagem nao baixada nao ira aparecer nada
-import logo from "../assets/img/react-logo.svg"  //exemplo imagem nao baixada
-//importar svg como component
-import { ReactComponents as Logo } from "../assets/img/react-logo.svg"
+// EXEMPLO USO SIMPLES DE IMAGENS COM REACT
+import "./addimage.css"
+// importar imagens jpg, png , gif, svg, jpeg, webp
+import mountain from "../assets/img/mountain.webp"
+import logo from "../assets/img/react-logo.svg"
+// importar imagens svg como componentes
+import { ReactComponent as Logo } from "../assets/img/react-logo.svg"
 
 const AddImage = () => {
-    return(
-        <div className="bgimagens">
-            {/*Usando imagens svg como components */}
-            <Logo alt="Logo React" widht="400" height="400" /> {/*chamando component logo e definindo seu tamanho*/}
-            {/*Usando imagens importadas com tag img */}
-            <img src={logo} alt="Logo React" widht="300" height="200"/>  {/*medidas em px */}
-            <img src={mountain} alt="mountain" widht="300" height="200" />
-        </div>
-    )
+  return (
+    <div className="bgimagens">
+        {/* Usando imagens svg como componentes */} 
+        <Logo alt="Logo React" width="400" height="400" />
+        {/* Usando imagens importadas com a tag img*/} 
+       <img src={logo} alt="Logo React" width="300" height="200"/>
+       <img src={mountain} alt="Mountains" width="300" height="200"/>
+    </div>
+  );
 }
 
 export default AddImage;
