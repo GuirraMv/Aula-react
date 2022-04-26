@@ -22,9 +22,7 @@ const handleTrashClick = (userId) => {
     .then((response) => response.json())
     .then((data) => {
       alert(data.message)
-      let userFiltered = users.filter(function(user){ 
-        return user.id !== userId;
-      });
+      let userFiltered = users.filter(function(user){ return user.id !== userId });
       setUsers(userFiltered)
     });
 }
