@@ -1,18 +1,23 @@
 import "./App.css";
-/* import ApiRequest from "./Components/Demo/ApiRequest";*/
-import Header from './Components/Header';
-import Logo from './Components/Logo'
-//import APIIntegration from './estudo/APIIntegration'
+import Header from "./Components/Header";
+import { Route, Routes } from "react-router-dom";
+import NotFound from './pages/NotFound';
+
 
 function App() {
   return (
     <>
       <div className="App">
-        <header className="Header">
-          <Logo />
+      <header className="Header">
           <Header/>
         </header>
-        {/* <APIIntegration /> */}
+
+
+         {/* <Routes>
+          <Route path="*" element={<NotFound/>} />
+        </Routes> */}
+      
+        
       </div>
     </>
   );

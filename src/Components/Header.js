@@ -1,17 +1,13 @@
-import "./Header.css";
-
+import Menu from "./Menu";
+import Logo from "./Logo";
 
 const Header = () => {
-  return(
-  <div className="Nav">
-      <ul>
-          <li className="Selected"> <a href="#">Home</a> </li>
-          <li> <a href="#">Posts</a> </li>
-          <li> <a href="#"> Matérias</a></li>
-          <li> <a href="#">Sobre</a></li>
-      </ul>
-  </div>
-  )
+    return(
+    <>
+        <Logo />
+        <Menu />
+    </>
+    )
 }
 
 export default Header;
