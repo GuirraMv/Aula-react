@@ -1,16 +1,30 @@
 import { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 
-const EditUser = () => {
+const EditUserOnChange = () => {
 
-    const { userId } = useParams();
-    const [user, setUser] = useState();
-    const navigate = useNavigate();
+    const { userId } = useParams()
+    const [user, setUser] = useState()
+    const navigate = useNavigate()
+
+    // const clearUserValue = {
+    //     name: '',
+    //     email: '',
+    //     pass: ''
+    // }
 
     useEffect(() => {
-        fetch("http://localhost/lp2/api/user/select-by-id/?id="+userId)
-            .then((response) => response.json())
-            .then((data) => setUser(data));
+        fetch(`http://localhost/lp2/api/user/select-by-id/?id=${userId}`)
+            .then((response) => {
+                if (response.ok) {
+                  return response.json();
+                }
+                throw new Error(response.statusText);
+            })
+            .then((data) => setUser(data))
+            .catch((error) => {
+                console.log(error);
+            })
     }, [userId]);
   
     const handleSubmit = (event) => {
@@ -28,21 +42,27 @@ const EditUser = () => {
             .then((data) => {
                 if(data?.user?.id){
                     navigate('../');
+                    //setUser(clearUserValue)
                 } else if(data?.message){
                     alert(data.message)
                 } else {
                     console.log(data)
                 }
             })
+    }
+    
+    const handleChange = (event) => {
+        const {name, value} = event.target
+        setUser({...user, [name]: value})
     } 
   
     return (
         <>
         {user ? (
             <form onSubmit={(event) => handleSubmit(event)}>
-                <label>Nome:</label><input type="text" name="name" defaultValue={user.name} />
-                <label>Email:</label><input type="email" name="email"  defaultValue={user.email} />
-                <label>Senha:</label><input type="password" name="pass"  defaultValue={user.pass} />
+                <label>Nome:</label><input type="text" name="name" value={user.name} onChange={handleChange} />
+                <label>Email:</label><input type="email" name="email"  value={user.email} onChange={handleChange} />
+                <label>Senha:</label><input type="password" name="pass"  value={user.pass} onChange={handleChange} />
                 <input type="submit" value="Editar" />
             </form>
             )
@@ -53,4 +73,4 @@ const EditUser = () => {
     )
 }
 
-export default EditUser
+export default EditUserOnChange
