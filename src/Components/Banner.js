@@ -1,4 +1,4 @@
-import Imagem from "../asset/img/Praia_vista_da_mata.jpg"
+import Imagem from "../asset/img/santoantonio2.jpg"
 import "./Banner.css"
 const Banner = () => {
     return(
