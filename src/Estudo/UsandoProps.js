@@ -2,6 +2,14 @@ import CardUser from "./CardUser.js";
 import './UsandoProps.css'
 
 const UsandoProps = () => {
+    useEffect(() => {
+        headConfig({
+            title: 'Usando Props',
+            description: 'Props description exemplo alterando head',
+            keywords: 'Props, React, Functional component',
+            canonical: 'https://renancavichi.com/props'
+        });
+    }, [])
 
     const users = [{
         id: 123,

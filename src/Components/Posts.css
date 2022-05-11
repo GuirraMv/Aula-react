@@ -27,10 +27,16 @@
 
 .Título{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
     background-color: #333334;
     color: #fff;
 }
 
 .Posts {
     background-color: #333334;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
