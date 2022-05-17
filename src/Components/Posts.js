@@ -1,9 +1,7 @@
 import './Posts.css'
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
-import CardGroup from 'react-bootstrap/CardGroup'
+import {CardGroup, Container} from 'react-bootstrap'
+import arua from '../asset/img/arua.jpg'
 
 const Posts = (props) => {
     //  const {id, name, lastname, avatar, status} = props;
@@ -13,49 +11,26 @@ const Posts = (props) => {
      
      <div className="Posts">
          
-         <CardGroup>
-   <Card>
-     <Card.Img variant="top" src="holder.js/100px160" />
-     <Card.Body>
-       <Card.Title>Card title</Card.Title>
-       <Card.Text>
-         This is a wider card with supporting text below as a natural lead-in to
-         additional content. This content is a little bit longer.
-       </Card.Text>
+  <CardGroup className='p-3'>
+   <Card className='cardin'>
+     <Card.Img className='imagine' variant="top" src={arua} />
+     <Card.Body className='bodin'>
+       <Card.Title className='titulis'>Prainha</Card.Title>
      </Card.Body>
-     
-     
-     <Card.Footer>
-       <small className="text-muted">Last updated 3 mins ago</small>
-     </Card.Footer>
    </Card>
-   <Card>
-     <Card.Img variant="top" src="holder.js/100px160" />
-     <Card.Body>
-       <Card.Title>Card title</Card.Title>
-       <Card.Text>
-         This card has supporting text below as a natural lead-in to additional
-         content.{' '}
-       </Card.Text>
+
+   <Card className='cardin'>
+     <Card.Img className='imagine' variant="top" src={arua} />
+     <Card.Body className='bodin'>
+       <Card.Title className='titulis'>Praia do Capricórnio</Card.Title>
      </Card.Body>
-     <Card.Footer>
-       <small className="text-muted">Last updated 3 mins ago</small>
-     </Card.Footer>
    </Card>
-   <Card>
-     
-     <Card.Img variant="top" src="holder.js/100px160" />
-     <Card.Body>
-       <Card.Title>Card title</Card.Title>
-       <Card.Text>
-         This is a wider card with supporting text below as a natural lead-in to
-         additional content. This card has even longer content than the first to
-         show that equal height action.
-       </Card.Text>
+
+   <Card className='cardin'>
+     <Card.Img className='imagine' variant="top" src={arua} />
+     <Card.Body className='bodin'>
+       <Card.Title className='titulis'>Praia da Mococa</Card.Title>
      </Card.Body>
-     <Card.Footer>
-       <small className="text-muted">Last updated 3 mins ago</small>
-     </Card.Footer>
    </Card>
  </CardGroup>
 
