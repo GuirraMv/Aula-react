@@ -10,7 +10,7 @@
 .Posts {
     background-color: #333334;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
 }
 
@@ -24,11 +24,26 @@
 .imagem{
     height: 201px;
     padding: 10px;
-    width: 405px;
 }
 
 .titulo{
     color: aliceblue;
     text-align: center;
     margin-top: -10px;
+}
+
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    align-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+a:hover {
+    color: #E3D12A;
 }
