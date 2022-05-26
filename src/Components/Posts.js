@@ -1,6 +1,6 @@
 import './Posts.css'
 import Card from 'react-bootstrap/Card'
-import {CardGroup, Container} from 'react-bootstrap'
+import {CardGroup} from 'react-bootstrap'
 import arua from '../asset/img/arua.jpg'
 
 const Posts = (props) => {

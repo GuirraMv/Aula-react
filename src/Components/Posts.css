@@ -5,6 +5,7 @@
     margin: 0;
     background-color: #333334;
     color: #fff;
+    padding: 10px 0 0 0 ;
 }
 
 .Posts {
@@ -17,7 +18,7 @@
 .card{
     margin:25px;
     width: 950px;
-    background-color: #969696;
+    background-color: #C4C4C4;
     height: 250px;
 }
 
@@ -45,5 +46,5 @@ a {
 }
 
 a:hover {
-    color: #E3D12A;
+    color: aliceblue;
 }
