@@ -1,4 +1,4 @@
-# Site para Projeto Integrador 3
+# Site para o curso Técnico em informática para Internet IFSP 2022
 
 Esse projeto faz parte da aula de Projeto Integrador 3, utilizando React com API PHP
 
@@ -8,4 +8,4 @@ Matheus Guirra Vieira
 
 ### Tema do site
 
-O tema do site foi pensado em um site que promoviria o turismo e mostraria a cidade para os visitantes também com a possibilidade de interagir
+O tema do site foi pensado em promover o turismo e mostrar a cidade para os visitantes
