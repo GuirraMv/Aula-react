@@ -27,7 +27,7 @@ const Posts = (props) => {
         <NavLink to="/" >
           <Card.Img className='imagem' variant="top" src={arua} />
           <Card.Body className='body'>
-          <Card.Title className='titulo'><a href="/">Prainha</a></Card.Title>
+          <Card.Title className='titulo'>Prainha</Card.Title>
           </Card.Body>
         </NavLink>
         </Card>
@@ -36,7 +36,7 @@ const Posts = (props) => {
         <NavLink to="/" >
           <Card.Img className='imagem' variant="top" src={arua} />
           <Card.Body className='body'>
-              <Card.Title className='titulo'><a href="/">Prainha</a></Card.Title>
+              <Card.Title className='titulo'>Prainha</Card.Title>
             </Card.Body>
             </NavLink>
         </Card>
@@ -50,7 +50,7 @@ const Posts = (props) => {
         <NavLink to="/" >
           <Card.Img className='imagem' variant="top" src={arua} />
           <Card.Body className='body'>
-          <Card.Title className='titulo'><a href="/">Prainha</a></Card.Title>
+          <Card.Title className='titulo'>Prainha</Card.Title>
           </Card.Body>
         </NavLink>
         </Card>
@@ -59,7 +59,7 @@ const Posts = (props) => {
         <NavLink to="/" >
           <Card.Img className='imagem' variant="top" src={arua} />
           <Card.Body className='body'>
-          <Card.Title className='titulo'><a href="/">Prainha</a></Card.Title>
+          <Card.Title className='titulo'>Prainha</Card.Title>
           </Card.Body>
         </NavLink>
         </Card>
@@ -68,7 +68,7 @@ const Posts = (props) => {
         <NavLink to="/" >
           <Card.Img className='imagem' variant="top" src={arua} />
           <Card.Body className='body'>
-          <Card.Title className='titulo'><a href="/">Prainha</a></Card.Title>
+          <Card.Title className='titulo'>Prainha</Card.Title>
           </Card.Body>
         </NavLink>
         </Card>
