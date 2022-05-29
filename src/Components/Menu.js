@@ -1,15 +1,17 @@
 import "./Menu.css";
+import { NavLink, Link } from 'react-router-dom';
+import { animateScroll as scroll } from "react-scroll";
 
 
 const Menu = () => {
-  return(
+  
+return(
   <div className="Nav">
-      <ul>
-          <li className="Selected"> <a href="#">Home</a> </li>
-          <li> <a href="#">Posts</a> </li>
-          <li> <a href="#"> Matérias</a></li>
-          <li> <a href="#">Sobre</a></li>
-      </ul>
+    <NavLink to="/" className="Navlink">Home</NavLink>
+    <NavLink to="Posts" className="Navlink">Posts</NavLink>
+    <NavLink to="Matérias" className="Navlink">Matérias</NavLink>
+    <NavLink to="/" className="Navlink" onClick={()=>scroll.scrollToBottom()}>Sobre</NavLink>
+
   </div>
   )
 }

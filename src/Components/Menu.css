@@ -21,29 +21,8 @@
   padding-right: 10px;
 }
 
-.Nav ul {
-  display: flex;
-  position: relative;
-  list-style: none;
-  height: 100%;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-
-.Nav li {
+.Navlink {
+  color: #E3D12A;
   display: inline-block;
   padding: 0 10px;
-}
-
-.Nav li a {
-  text-decoration: none;
-  color: #E3D12A;
-}
-
-.Nav li a:hover {
-  text-decoration: underline;
-}
-
-.Selected {
-  font-weight: bold;
 }
