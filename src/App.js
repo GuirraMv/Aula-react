@@ -5,7 +5,9 @@ import Banner from "./Components/Banner";
 import Postshome from "./Components/Postshome";
 import Materiashome from "./Components/Materiashome";
 import Sobre from "./Components/Sobre"
-import { Route, Routes, NavLink } from "react-router-dom";
+import { Route, Routes, NavLink, BrowserRouter } from "react-router-dom";
+import { animateScroll as scroll } from "react-scroll";
+import Posts from "./Components/Posts";
 //import NotFound from './pages/NotFound';
 
 

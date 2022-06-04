@@ -7,7 +7,7 @@ const Menu = () => {
 return(
   <div className="Nav">
     {/* <Routes>
-      {/* <Route  path="/" element={<App />} />
+      <Route  path="/" element={<App />} />
       <Route path="Posts" element={<Posts />}></Route>
     </Routes> */}
 
