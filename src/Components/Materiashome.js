@@ -1,11 +1,11 @@
-import "./Materias.css"
+import "./Materiashome.css"
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Surf from "../asset/img/surf.jpg"
 import {NavLink} from 'react-router-dom';
 
-const Materias = () => {
+const Materiashome = () => {
     return(
     <>
     <div className="materias">
@@ -51,4 +51,4 @@ const Materias = () => {
     )
 }
 
-export default Materias
+export default Materiashome

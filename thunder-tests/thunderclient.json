@@ -1,0 +1,172 @@
+[
+  {
+    "_id": "2a6f1b2f-c3ec-4fa9-8285-83a461445bd8",
+    "colId": "0e718698-47cf-4eeb-b673-124984b8c826",
+    "containerId": "",
+    "name": "lp2/api/auth/logout",
+    "url": "http://localhost/lp2/api/auth/logout",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2022-06-04T17:57:19.497Z",
+    "modified": "2022-06-04T17:57:19.497Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "token",
+          "value": "36beaf781be9cee010e66e4a68a7b1b0"
+        }
+      ]
+    },
+    "auth": {
+      "type": "basic"
+    },
+    "tests": []
+  },
+  {
+    "_id": "0fd5d03e-028e-4715-a931-1f11f360bef1",
+    "colId": "0e718698-47cf-4eeb-b673-124984b8c826",
+    "containerId": "",
+    "name": "lp2/api/auth/login",
+    "url": "http://localhost/lp2/api/auth/login",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2022-06-04T17:58:08.549Z",
+    "modified": "2022-06-04T17:58:08.549Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "email",
+          "value": "matheusguirra@email.com"
+        },
+        {
+          "name": "pass",
+          "value": "123"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "9e3b66b2-42ae-4d82-aaa8-004edd121fbb",
+    "colId": "0e718698-47cf-4eeb-b673-124984b8c826",
+    "containerId": "",
+    "name": "lp2/api/card/create",
+    "url": "http://localhost/lp2/api/card/create",
+    "method": "POST",
+    "sortNum": 30000,
+    "created": "2022-06-04T18:06:22.795Z",
+    "modified": "2022-06-04T18:06:22.795Z",
+    "headers": [
+      {
+        "name": "ACCESS-TOKEN",
+        "value": "0054c4074c5a1c328de262e5c8a1dcfa"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "photo",
+          "value": "https://github.com/GuirraMv/caraguaturista---front-end/blob/master/Material/Logotipo.png"
+        },
+        {
+          "name": "title",
+          "value": "dasdad"
+        },
+        {
+          "name": "descricao",
+          "value": "sdcjhgfdsaASDFGHJKLKJHGFDSshrh"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "bb738d99-278e-487a-b994-12970fdc693e",
+    "colId": "0e718698-47cf-4eeb-b673-124984b8c826",
+    "containerId": "",
+    "name": "lp2/api/card/select-all",
+    "url": "http://localhost/lp2/api/card/select-all",
+    "method": "GET",
+    "sortNum": 40000,
+    "created": "2022-06-04T18:30:46.363Z",
+    "modified": "2022-06-04T18:30:46.363Z",
+    "headers": [
+      {
+        "name": "ACCESS-TOKEN",
+        "value": "0054c4074c5a1c328de262e5c8a1dcfa"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "photo",
+          "value": "https://github.com/GuirraMv/caraguaturista---front-end/blob/master/Material/Logotipo.png"
+        },
+        {
+          "name": "title",
+          "value": "dasdad"
+        },
+        {
+          "name": "descricao",
+          "value": "sdcjhgfdsaASDFGHJKLKJHGFDSshrh"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "49341359-835f-478f-8b47-a01c0649e5e4",
+    "colId": "0e718698-47cf-4eeb-b673-124984b8c826",
+    "containerId": "",
+    "name": "lp2/api/card/update",
+    "url": "http://localhost/lp2/api/card/update",
+    "method": "POST",
+    "sortNum": 50000,
+    "created": "2022-06-04T18:40:21.298Z",
+    "modified": "2022-06-04T18:40:21.298Z",
+    "headers": [
+      {
+        "name": "ACCESS-TOKEN",
+        "value": "0054c4074c5a1c328de262e5c8a1dcfa"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "id",
+          "value": "3"
+        },
+        {
+          "name": "photo",
+          "value": "https://t.ctcdn.com.br/WCmZ_LU_RoCZL1jCno7fE153Z_U=/400x400/smart/filters:format(webp)/i489932.jpeg"
+        },
+        {
+          "name": "title",
+          "value": "testando"
+        },
+        {
+          "name": "descricao",
+          "value": "testando update"
+        }
+      ]
+    },
+    "tests": []
+  }
+]

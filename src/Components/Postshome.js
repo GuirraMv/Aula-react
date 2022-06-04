@@ -1,10 +1,10 @@
-import './Posts.css'
+import './Postshome.css'
 import Card from 'react-bootstrap/Card'
 import {CardGroup} from 'react-bootstrap'
 import arua from '../asset/img/arua.jpg'
 import { NavLink} from 'react-router-dom';
 
-const Posts = (props) => {
+const Postshome = (props) => {
     //  const {id, name, lastname, avatar, status} = props;
     return(
     <>
@@ -80,4 +80,4 @@ const Posts = (props) => {
   )
 }
 
-export default Posts
+export default Postshome

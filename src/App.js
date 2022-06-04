@@ -2,9 +2,11 @@ import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "./Components/Header";
 import Banner from "./Components/Banner";
-import Posts from "./Components/Posts"
-import Materias from "./Components/Materias";
+import Postshome from "./Components/Postshome";
+import Materiashome from "./Components/Materiashome";
 import Sobre from "./Components/Sobre"
+
+
 //import { Route, Routes } from "react-router-dom";
 //import NotFound from './pages/NotFound';
 
@@ -18,10 +20,10 @@ function App() {
       </header>
       <Banner />
       <div className="SectionPosts">
-        <Posts/>
+        <Postshome />
       </div>
       <div className="SectionMaterias">
-        <Materias/>
+        <Materiashome/>
       </div>
         <Sobre/>
       </div>

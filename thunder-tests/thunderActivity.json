@@ -1,0 +1,405 @@
+[
+  {
+    "_id": "d1421629-6e46-457f-b12b-eecc28b1bc2d",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost/user/lp2/api/select-all",
+    "url": "http://localhost/user/lp2/api/select-all",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-06-04T17:19:26.173Z",
+    "modified": "2022-06-04T17:19:26.213Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "dbf152b9-7c4a-4174-8a4e-76cbd4f0ee95",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost/user/lp2/api/select-all",
+    "url": "http://localhost/user/lp2/api/select-all",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-06-04T17:19:35.452Z",
+    "modified": "2022-06-04T17:19:35.464Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "eea6a5c3-87cd-47c3-824d-b2b0484635b6",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost/users/lp2/api/select-all",
+    "url": "http://localhost/users/lp2/api/select-all",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-06-04T17:19:49.594Z",
+    "modified": "2022-06-04T17:19:49.601Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "df49ff7c-a946-453b-beb7-f9083dcd7157",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost/users/lp2/api/select-all",
+    "url": "http://localhost/users/lp2/api/select-all",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-06-04T17:20:07.484Z",
+    "modified": "2022-06-04T17:20:07.491Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "62f45077-b4cb-4186-b5d9-0a3d3270d31e",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost/lp2/api/cards/select-all",
+    "url": "http://localhost/lp2/api/cards/select-all",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-06-04T17:21:50.357Z",
+    "modified": "2022-06-04T17:21:50.577Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "8bc7ca4d-7a8a-43e6-815e-711e26a1b8f2",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost/lp2/api/card/select-all",
+    "url": "http://localhost/lp2/api/card/select-all",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-06-04T17:22:36.311Z",
+    "modified": "2022-06-04T18:08:46.852Z",
+    "headers": [
+      {
+        "name": "ACCESS-TOKEN",
+        "value": "0054c4074c5a1c328de262e5c8a1dcfa"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "photo",
+          "value": "https://github.com/GuirraMv/caraguaturista---front-end/blob/master/Material/Logotipo.png"
+        },
+        {
+          "name": "title",
+          "value": "dasdad"
+        },
+        {
+          "name": "descricao",
+          "value": "sdcjhgfdsaASDFGHJKLKJHGFDSshrh"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "ba296405-3dc7-44a7-8d98-62968a27c959",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost/lp2/api/card/select-all",
+    "url": "http://localhost/lp2/api/card/select-all",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-06-04T17:22:41.682Z",
+    "modified": "2022-06-04T18:23:24.523Z",
+    "headers": [
+      {
+        "name": "ACCESS-TOKEN",
+        "value": "0054c4074c5a1c328de262e5c8a1dcfa"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "photo",
+          "value": "https://github.com/GuirraMv/caraguaturista---front-end/blob/master/Material/Logotipo.png"
+        },
+        {
+          "name": "title",
+          "value": "dasdad"
+        },
+        {
+          "name": "descricao",
+          "value": "sdcjhgfdsaASDFGHJKLKJHGFDSshrh"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "a2c16871-8d79-4078-b97b-9452336ea619",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost/lp2/api/auth/login",
+    "url": "http://localhost/lp2/api/auth/login",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-06-04T17:26:21.970Z",
+    "modified": "2022-06-04T17:57:47.580Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "email",
+          "value": "matheusguirra@email.com"
+        },
+        {
+          "name": "pass",
+          "value": "123"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "5c55acd8-3bc5-42dd-8afe-395d580a1ff7",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost/lp2/api/users/create",
+    "url": "http://localhost/lp2/api/users/create",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-06-04T17:29:00.641Z",
+    "modified": "2022-06-04T17:29:02.597Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "name",
+          "value": "Matheus"
+        },
+        {
+          "name": "email",
+          "value": "matheusguirra@email.com"
+        },
+        {
+          "name": "pass",
+          "value": "123"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "4fbba586-6ccb-4da6-8c5f-a753da171b29",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost/lp2/api/user/create",
+    "url": "http://localhost/lp2/api/user/create",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-06-04T17:29:10.861Z",
+    "modified": "2022-06-04T17:29:42.502Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "name",
+          "value": "Matheus"
+        },
+        {
+          "name": "email",
+          "value": "matheusguirra@email.com"
+        },
+        {
+          "name": "pass",
+          "value": "123"
+        },
+        {
+          "name": "roles",
+          "value": "admin"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "74ecd277-fdb0-43cd-9af1-3bf8d0a5ec31",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost/lp2/api/card/create",
+    "url": "http://localhost/lp2/api/card/create",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-06-04T17:32:47.544Z",
+    "modified": "2022-06-04T18:06:04.670Z",
+    "headers": [
+      {
+        "name": "ACCESS-TOKEN",
+        "value": "0054c4074c5a1c328de262e5c8a1dcfa"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "photo",
+          "value": "https://github.com/GuirraMv/caraguaturista---front-end/blob/master/Material/Logotipo.png"
+        },
+        {
+          "name": "title",
+          "value": "dasdad"
+        },
+        {
+          "name": "descricao",
+          "value": "sdcjhgfdsaASDFGHJKLKJHGFDSshrh"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "796af07c-78fb-44f5-a4ce-68d9b404b4fe",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost/lp2/api/auth/logout",
+    "url": "http://localhost/lp2/api/auth/logout",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-06-04T17:56:21.242Z",
+    "modified": "2022-06-04T17:56:21.359Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "token",
+          "value": "36beaf781be9cee010e66e4a68a7b1b0"
+        }
+      ]
+    },
+    "auth": {
+      "type": "basic"
+    },
+    "tests": []
+  },
+  {
+    "_id": "62dc953b-3575-46d7-8d82-b26a892458c8",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost/lp2/api/card/delete",
+    "url": "http://localhost/lp2/api/card/delete",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-06-04T18:32:21.920Z",
+    "modified": "2022-06-04T18:32:21.933Z",
+    "headers": [
+      {
+        "name": "ACCESS-TOKEN",
+        "value": "0054c4074c5a1c328de262e5c8a1dcfa"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "id",
+          "value": "2"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "d8b90082-65e9-45d2-8949-399466784a92",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost/lp2/api/card/delete",
+    "url": "http://localhost/lp2/api/card/delete",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-06-04T18:32:29.666Z",
+    "modified": "2022-06-04T18:32:29.802Z",
+    "headers": [
+      {
+        "name": "ACCESS-TOKEN",
+        "value": "0054c4074c5a1c328de262e5c8a1dcfa"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "id",
+          "value": "2"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "7683f080-8466-4418-9dee-ae25c628e51d",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost/lp2/api/card/update",
+    "url": "http://localhost/lp2/api/card/update",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-06-04T18:39:40.433Z",
+    "modified": "2022-06-04T18:39:40.529Z",
+    "headers": [
+      {
+        "name": "ACCESS-TOKEN",
+        "value": "0054c4074c5a1c328de262e5c8a1dcfa"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "id",
+          "value": "3"
+        },
+        {
+          "name": "photo",
+          "value": "https://t.ctcdn.com.br/WCmZ_LU_RoCZL1jCno7fE153Z_U=/400x400/smart/filters:format(webp)/i489932.jpeg"
+        },
+        {
+          "name": "title",
+          "value": "testando"
+        },
+        {
+          "name": "descricao",
+          "value": "testando update"
+        }
+      ]
+    },
+    "tests": []
+  }
+]
