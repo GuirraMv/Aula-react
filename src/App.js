@@ -5,9 +5,7 @@ import Banner from "./Components/Banner";
 import Postshome from "./Components/Postshome";
 import Materiashome from "./Components/Materiashome";
 import Sobre from "./Components/Sobre"
-
-
-//import { Route, Routes } from "react-router-dom";
+import { Route, Routes, NavLink } from "react-router-dom";
 //import NotFound from './pages/NotFound';
 
 
