@@ -4,18 +4,16 @@ import Header from "./Components/Header";
 import Banner from "./Components/Banner";
 import Postshome from "./Components/Postshome";
 import Materiashome from "./Components/Materiashome";
-import Sobre from "./Components/Sobre"
+import Sobre from "./Components/Sobre";
 import { Route, Routes, NavLink, BrowserRouter } from "react-router-dom";
-import { animateScroll as scroll } from "react-scroll";
 import Posts from "./Components/Posts";
-//import NotFound from './pages/NotFound';
-
+import Home from "./Components/Home";
 
 function App() {
   return (
     <>
       <div className="App">
-      <header className="Header">
+      {/* <header className="Header">
         <Header/>
       </header>
       <Banner />
@@ -25,7 +23,11 @@ function App() {
       <div className="SectionMaterias">
         <Materiashome/>
       </div>
-        <Sobre/>
+        <Sobre/> */}
+      
+      <Routes>
+        <Route path="*" element={<Home />} />
+      </Routes>
       </div>
     </>
   );

@@ -1,10 +1,10 @@
 import "./Posts.css"
-import Header from "./Header"
+// import Header from "./Header"
 
 const Posts = () => {
     return (
         <>
-        <Header />
+        {/* <Header /> */}
         <div className="Post">
 
         </div>

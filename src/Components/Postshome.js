@@ -14,7 +14,7 @@ const Postshome = (props) => {
       <CardGroup className='p-3'>
         {/* card1 */}
         <Card className='card'>
-        <NavLink to="/" >
+        <NavLink to="Posts" >
           <Card.Img className='imagem' variant="top" src={arua} />
           <Card.Body className='body'>
           <Card.Title className='titulo'>Prainha</Card.Title>
