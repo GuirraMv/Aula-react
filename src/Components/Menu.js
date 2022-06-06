@@ -1,8 +1,6 @@
 import "./Menu.css";
-import { NavLink, Route, Routes, Link} from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 import { animateScroll as scroll } from "react-scroll";
-import App from "../App";
-import Posts from "./Posts";
 
 const Menu = () => {
   
@@ -13,10 +11,10 @@ return(
       <Route path="Posts/" element={<Posts />} />
     </Routes> */}
 
-    <Link to="/" className="Navlink">Home</Link>
-    <Link to="Posts" className="Navlink">Posts</Link>
-    <Link to="Matérias" className="Navlink">Matérias</Link>
-    <Link to="/" className="Navlink" onClick={()=>scroll.scrollToBottom()}>Sobre</Link>
+    <NavLink to="/" className="Navlink">Home</NavLink>
+    <NavLink to="posts" className="Navlink">Posts</NavLink>
+    <NavLink to="materias" className="Navlink">Matérias</NavLink>
+    <NavLink to="/" className="Navlink" onClick={()=>scroll.scrollToBottom()}>Sobre</NavLink>
 
   </div>
   )

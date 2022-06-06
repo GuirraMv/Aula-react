@@ -12,7 +12,7 @@ const Materiashome = () => {
     <Container>
         <Row>
         <Col>
-            <NavLink to="/" ><h2 className="materiatitle">Matérias</h2></NavLink>
+            <NavLink to="materias" ><h2 className="materiatitle">Matérias</h2></NavLink>
             <div className="cardone">
             <NavLink to="/" >
             <div className="title">
