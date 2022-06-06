@@ -152,7 +152,7 @@
     "method": "POST",
     "sortNum": 0,
     "created": "2022-06-04T17:26:21.970Z",
-    "modified": "2022-06-04T17:57:47.580Z",
+    "modified": "2022-06-06T20:37:21.638Z",
     "headers": [],
     "params": [],
     "body": {
@@ -370,11 +370,11 @@
     "method": "POST",
     "sortNum": 0,
     "created": "2022-06-04T18:39:40.433Z",
-    "modified": "2022-06-04T18:39:40.529Z",
+    "modified": "2022-06-06T20:51:42.557Z",
     "headers": [
       {
         "name": "ACCESS-TOKEN",
-        "value": "0054c4074c5a1c328de262e5c8a1dcfa"
+        "value": "bcd43824f87a47eaee13a7007998616a"
       }
     ],
     "params": [],
@@ -397,6 +397,10 @@
         {
           "name": "descricao",
           "value": "testando update"
+        },
+        {
+          "name": "texto",
+          "value": "teeeeeeeeste"
         }
       ]
     },

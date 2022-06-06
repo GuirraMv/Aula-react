@@ -6,12 +6,7 @@ const Menu = () => {
   
 return(
   <div className="Nav">
-    {/* <Routes>
-      <Route  path="*" element={<App />} />
-      <Route path="Posts/" element={<Posts />} />
-    </Routes> */}
-
-    <NavLink to="/" className="Navlink">Home</NavLink>
+    <NavLink to="/" className="Navlink">Início</NavLink>
     <NavLink to="/posts" className="Navlink">Posts</NavLink>
     <NavLink to="/materias" className="Navlink">Matérias</NavLink>
     <a className="Navlink" onClick={()=>scroll.scrollToBottom()}>Sobre</a>
