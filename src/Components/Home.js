@@ -12,16 +12,10 @@ function Home() {
   return (
     <>
       <div className="Home">
-      <header className="Header">
         <Header/>
-      </header>
-      <Banner />
-      <div className="SectionPosts">
+        <Banner />
         <Postshome />
-      </div>
-      <div className="SectionMaterias">
         <Materiashome/>
-      </div>
         <Sobre/>
       </div>
     </>

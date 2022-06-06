@@ -8,7 +8,7 @@ import {NavLink} from 'react-router-dom';
 const Materiashome = () => {
     return(
     <>
-    <div className="materias">
+    <div className="materiashome">
     <Container>
         <Row>
         <Col>

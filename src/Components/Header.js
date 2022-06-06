@@ -1,12 +1,13 @@
 import Menu from "./Menu";
 import Logo from "./Logo";
+import "./Header.css"
 
 const Header = () => {
     return(
-    <>
-        <Logo />
-        <Menu />
-    </>
+        <header className="Header">
+            <Logo />
+            <Menu />
+        </header>
     )
 }
 

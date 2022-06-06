@@ -1,4 +1,6 @@
 * {
+    margin: 0%;
     font-family: 'Roboto Mono', monospace;
-    text-decoration-thickness: none
-}
+    font-style: normal;
+    font-size: 16px;
+  }

@@ -8,7 +8,7 @@ const Postshome = (props) => {
     //  const {id, name, lastname, avatar, status} = props;
     return(
     <>
-    <NavLink to="/" ><h1 className="Título">Posts</h1></NavLink>
+    <NavLink to="posts" ><h1 className="Título">Posts</h1></NavLink>
     
     <div className="Posts">   
       <CardGroup className='p-3'>
