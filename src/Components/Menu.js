@@ -12,9 +12,9 @@ return(
     </Routes> */}
 
     <NavLink to="/" className="Navlink">Home</NavLink>
-    <NavLink to="posts" className="Navlink">Posts</NavLink>
-    <NavLink to="materias" className="Navlink">Matérias</NavLink>
-    <NavLink to="/" className="Navlink" onClick={()=>scroll.scrollToBottom()}>Sobre</NavLink>
+    <NavLink to="/posts" className="Navlink">Posts</NavLink>
+    <NavLink to="/materias" className="Navlink">Matérias</NavLink>
+    <a className="Navlink" onClick={()=>scroll.scrollToBottom()}>Sobre</a>
 
   </div>
   )
