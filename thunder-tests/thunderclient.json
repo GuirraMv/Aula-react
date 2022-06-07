@@ -63,11 +63,11 @@
     "method": "POST",
     "sortNum": 30000,
     "created": "2022-06-04T18:06:22.795Z",
-    "modified": "2022-06-04T18:06:22.795Z",
+    "modified": "2022-06-07T19:50:46.801Z",
     "headers": [
       {
         "name": "ACCESS-TOKEN",
-        "value": "0054c4074c5a1c328de262e5c8a1dcfa"
+        "value": "06d2d9881df4690efa656dd48d357980"
       }
     ],
     "params": [],
@@ -77,15 +77,19 @@
       "form": [
         {
           "name": "photo",
-          "value": "https://github.com/GuirraMv/caraguaturista---front-end/blob/master/Material/Logotipo.png"
+          "value": "https://imgbox.com/Dsphr2a4"
         },
         {
           "name": "title",
-          "value": "dasdad"
+          "value": "Morro do Santo Antônio"
         },
         {
           "name": "descricao",
-          "value": "sdcjhgfdsaASDFGHJKLKJHGFDSshrh"
+          "value": "teste"
+        },
+        {
+          "name": "texto",
+          "value": "teste"
         }
       ]
     },

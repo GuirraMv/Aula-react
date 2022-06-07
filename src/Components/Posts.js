@@ -1,116 +1,46 @@
 import "./Posts.css"
-import Header from "./Header"
-import Sobre from "./Sobre"
+import { useState, useEffect } from "react"
 import Card from 'react-bootstrap/Card'
 import {CardGroup} from 'react-bootstrap'
-import arua from '../asset/img/arua.jpg'
-import { NavLink} from 'react-router-dom';
+import { NavLink} from 'react-router-dom'
+import Header from "./Header"
+import Sobre from "./Sobre"
+// import arua from '../asset/img/arua.jpg'
 
 const Posts = () => {
-    return (
-        <>
-        <Header />
-        <div className="posts">
-        <h2>Posts mais recentes</h2>
-
-        <CardGroup className='p-3'>
-        {/* card1 */}
-        <Card className='card'>
-        <NavLink to="Posts" >
-          <Card.Img className='imagem' variant="top" src={arua} />
+  const [cards, setCards] = useState(null);
+  useEffect(() => {
+    fetch("http://localhost/lp2/api/card/select-all")
+    .then((response) => response.json())
+    .then((data) => setCards(data))
+  }, [])
+    
+  return (
+    <>
+    <Header />
+    <h2 className="posts">Posts mais recentes</h2>
+    {cards &&
+      cards.map((cards) => {
+        return (
+        <div className="posts" key={cards.id}>
+          <CardGroup className='p-3'>
+          <Card className='card'>
+          <NavLink to="Posts" >
+          <Card.Img className='imagem' variant="top" src={cards.photo} />
           <Card.Body className='body'>
-          <Card.Title className='titulo'>Prainha</Card.Title>
+          <Card.Title className='titulo'>{cards.title}</Card.Title>
           </Card.Body>
-        </NavLink>
-        </Card>
-        
-        {/* card2 */}
-        <Card className='card'>
-        <NavLink to="/" >
-          <Card.Img className='imagem' variant="top" src={arua} />
-          <Card.Body className='body'>
-          <Card.Title className='titulo'>Prainha</Card.Title>
-          </Card.Body>
-        </NavLink>
-        </Card>
-        {/* card3 */}
-        <Card className='card'>
-        <NavLink to="/" >
-          <Card.Img className='imagem' variant="top" src={arua} />
-          <Card.Body className='body'>
-              <Card.Title className='titulo'>Prainha</Card.Title>
-            </Card.Body>
-            </NavLink>
-        </Card>
-      </CardGroup>
-
-      <CardGroup className='p-3'>
-        {/* card1 */}
-        <Card className='card'>
-        <NavLink to="Posts" >
-          <Card.Img className='imagem' variant="top" src={arua} />
-          <Card.Body className='body'>
-          <Card.Title className='titulo'>Prainha</Card.Title>
-          </Card.Body>
-        </NavLink>
-        </Card>
-        
-        {/* card2 */}
-        <Card className='card'>
-        <NavLink to="/" >
-          <Card.Img className='imagem' variant="top" src={arua} />
-          <Card.Body className='body'>
-          <Card.Title className='titulo'>Prainha</Card.Title>
-          </Card.Body>
-        </NavLink>
-        </Card>
-        {/* card3 */}
-        <Card className='card'>
-        <NavLink to="/" >
-          <Card.Img className='imagem' variant="top" src={arua} />
-          <Card.Body className='body'>
-              <Card.Title className='titulo'>Prainha</Card.Title>
-            </Card.Body>
-            </NavLink>
-        </Card>
-      </CardGroup>
-
-      <CardGroup className='p-3'>
-        {/* card1 */}
-        <Card className='card'>
-        <NavLink to="Posts" >
-          <Card.Img className='imagem' variant="top" src={arua} />
-          <Card.Body className='body'>
-          <Card.Title className='titulo'>Prainha</Card.Title>
-          </Card.Body>
-        </NavLink>
-        </Card>
-        
-        {/* card2 */}
-        <Card className='card'>
-        <NavLink to="/" >
-          <Card.Img className='imagem' variant="top" src={arua} />
-          <Card.Body className='body'>
-          <Card.Title className='titulo'>Prainha</Card.Title>
-          </Card.Body>
-        </NavLink>
-        </Card>
-        {/* card3 */}
-        <Card className='card'>
-        <NavLink to="/" >
-          <Card.Img className='imagem' variant="top" src={arua} />
-          <Card.Body className='body'>
-              <Card.Title className='titulo'>Prainha</Card.Title>
-            </Card.Body>
-            </NavLink>
-        </Card>
-      </CardGroup>
-        
-        
+          </NavLink>
+          </Card>
+          </CardGroup>
         </div>
+       )
+      } ) }
+        
         <Sobre />
         </>
     )
 }
+
 
 export default Posts
