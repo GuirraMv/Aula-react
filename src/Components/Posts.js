@@ -5,7 +5,6 @@ import {CardGroup} from 'react-bootstrap'
 import { NavLink} from 'react-router-dom'
 import Header from "./Header"
 import Sobre from "./Sobre"
-// import arua from '../asset/img/arua.jpg'
 
 const Posts = () => {
   const [cards, setCards] = useState(null);
@@ -18,7 +17,7 @@ const Posts = () => {
   return (
     <>
     <Header />
-    <h2 className="posts">Posts mais recentes</h2>
+    <h2 className="titlepost">Posts mais recentes</h2>
     {cards &&
       cards.map((cards) => {
         return (
@@ -35,11 +34,11 @@ const Posts = () => {
           </CardGroup>
         </div>
        )
-      } ) }
-        
-        <Sobre />
-        </>
-    )
+      }) 
+    }  
+    <Sobre />
+    </>
+  )
 }
 
 

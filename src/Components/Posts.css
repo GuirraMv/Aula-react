@@ -2,7 +2,7 @@
     background-color: #333334;
 }
 
-h2 {
+.titlepost {
     font-weight: bold;
     font-size: 20px;
     display: flex;
