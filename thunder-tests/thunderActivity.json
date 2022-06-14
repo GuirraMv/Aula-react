@@ -248,7 +248,7 @@
     "method": "POST",
     "sortNum": 0,
     "created": "2022-06-04T17:32:47.544Z",
-    "modified": "2022-06-04T18:06:04.670Z",
+    "modified": "2022-06-14T20:03:08.183Z",
     "headers": [
       {
         "name": "ACCESS-TOKEN",
@@ -261,16 +261,20 @@
       "raw": "",
       "form": [
         {
-          "name": "photo",
-          "value": "https://github.com/GuirraMv/caraguaturista---front-end/blob/master/Material/Logotipo.png"
-        },
-        {
           "name": "title",
-          "value": "dasdad"
+          "value": "One Piece"
         },
         {
           "name": "descricao",
-          "value": "sdcjhgfdsaASDFGHJKLKJHGFDSshrh"
+          "value": "anime de qualidade, mais de mil episódios de pura adrenalina e diversão"
+        },
+        {
+          "name": "photo",
+          "value": "https://br.ign.com/one-piece-2/99352/news/one-piece-cosplay-de-boa-hancock-feito-por-brasileira-e-orgulho-pirata"
+        },
+        {
+          "name": "texto",
+          "value": "Oneeeeeeee Pieceeeeee"
         }
       ]
     },
@@ -341,7 +345,7 @@
     "method": "POST",
     "sortNum": 0,
     "created": "2022-06-04T18:32:29.666Z",
-    "modified": "2022-06-04T18:32:29.802Z",
+    "modified": "2022-06-14T19:56:19.365Z",
     "headers": [
       {
         "name": "ACCESS-TOKEN",
@@ -355,7 +359,7 @@
       "form": [
         {
           "name": "id",
-          "value": "2"
+          "value": "4"
         }
       ]
     },
@@ -370,7 +374,7 @@
     "method": "POST",
     "sortNum": 0,
     "created": "2022-06-04T18:39:40.433Z",
-    "modified": "2022-06-06T20:51:42.557Z",
+    "modified": "2022-06-14T20:16:14.755Z",
     "headers": [
       {
         "name": "ACCESS-TOKEN",
@@ -384,11 +388,11 @@
       "form": [
         {
           "name": "id",
-          "value": "3"
+          "value": "6"
         },
         {
           "name": "photo",
-          "value": "https://t.ctcdn.com.br/WCmZ_LU_RoCZL1jCno7fE153Z_U=/400x400/smart/filters:format(webp)/i489932.jpeg"
+          "value": "https://www.youtube.com/watch?v=k9vT3Cp-_Gc"
         },
         {
           "name": "title",

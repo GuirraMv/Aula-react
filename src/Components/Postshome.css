@@ -1,4 +1,4 @@
-.Título{
+/* .Título{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -18,10 +18,11 @@
 
 .card{
     margin:25px;
-    width: 950px;
+    width: 60px;
     background-color: #C4C4C4;
     height: 250px;
 }
+
 
 .imagem{
     height: 201px;
@@ -52,4 +53,27 @@ a {
 
 a:hover {
     color: aliceblue;
+} */
+
+.Título{
+    text-align: center;
+    text-decoration-line: none;
+    color: aliceblue;
+    background-color: #333334;
+}
+
+.post{
+    width: 250px;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.scroll-lateral{
+    overflow-y: auto;
+    overflow-x: hidden;
+    overflow: auto;
+    white-space: nowrap;
+    height: 300px;
+    width: 100%;
+    background-color: #333334;
 }
