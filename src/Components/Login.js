@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react"
-import { useAuth } from "../../../../Estudo/providers/authProvider";
+import { useAuth } from "./authProvider";
+import Logo from "./Logo";
 
 const Login = () => {
 
@@ -25,14 +26,30 @@ const Login = () => {
                 if(response.status === 200) {
                     let data = await response.json()
                     setIslogged(true)
+                    setUserLogged(data.session)
+                    localStorage.setItem('userLogged', JSON.stringify(data.session));
+                } else {
+                    let data = await response.json()
+                    data?.message
+                        ? alert(data.message)
+                        : alert('Erro ao Logar!')
                 }
             })
     }
 
     return(
         <>
-        <div>
+        <div className="logo">
+            <Logo />
+            <h2>Área do administrador</h2>
+        </div>
 
+        <div className="formulario">
+            <form onSubmit={(event) => handleSubmit(event)}>
+            <label>Email:</label><input ref={emailRef} type="email" name="email" />
+            <label>Senha:</label><input ref={passRef} type="password" name="pass" />
+            <input type="submit" value="ENTRAR" />
+            </form>
         </div>
         </>
     )

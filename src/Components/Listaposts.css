@@ -1,0 +1,12 @@
+.posts {
+    background-color: #333334;
+}
+
+.titlepost {
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #333334;
+}
