@@ -176,5 +176,25 @@
       ]
     },
     "tests": []
+  },
+  {
+    "_id": "34dd3eea-ab7c-464b-91fc-c1bd99211d0f",
+    "colId": "0e718698-47cf-4eeb-b673-124984b8c826",
+    "containerId": "",
+    "name": "localhost/lp2/api/card/select-by-id?id=5",
+    "url": "http://localhost/lp2/api/card/select-by-id?id=5",
+    "method": "GET",
+    "sortNum": 60000,
+    "created": "2022-06-16T19:12:38.595Z",
+    "modified": "2022-06-16T19:12:38.595Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "id",
+        "value": "5",
+        "isPath": false
+      }
+    ],
+    "tests": []
   }
 ]

@@ -6,7 +6,7 @@ import { NavLink} from 'react-router-dom'
 import Header from "./Header"
 import Sobre from "./Sobre"
 
-const Posts = () => {
+const ListaPosts = () => {
   const [cards, setCards] = useState(null);
   useEffect(() => {
     fetch("http://localhost/lp2/api/card/select-all")
@@ -42,4 +42,4 @@ const Posts = () => {
 }
 
 
-export default Posts
+export default ListaPosts

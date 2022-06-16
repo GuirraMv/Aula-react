@@ -1,4 +1,4 @@
-/* .Título{
+.Título{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -44,6 +44,7 @@
 
 .p-3 {
     padding: 16px 0 16px 0 !important;
+    background-color: #333334;
 }
 
 a {
@@ -53,9 +54,9 @@ a {
 
 a:hover {
     color: aliceblue;
-} */
+}
 
-.Título{
+/* .Título{
     text-align: center;
     text-decoration-line: none;
     color: aliceblue;
@@ -76,4 +77,4 @@ a:hover {
     height: 300px;
     width: 100%;
     background-color: #333334;
-}
+} */

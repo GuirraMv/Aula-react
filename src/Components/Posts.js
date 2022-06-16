@@ -1,6 +1,8 @@
 import "./Posts.css"
 import { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
+import Header from "./Header"
+import Sobre from "./Sobre"
 
 const Posts = (props) => {
 
@@ -20,7 +22,15 @@ const Posts = (props) => {
         <div>
             {cards &&
             (
-                
+                <>
+                <div key={cards.id} className="a">
+                    <Header />
+                    <h2>{cards.title}</h2>
+                    <img src={cards.photo} />
+                    <div className="texto">{cards.texto}</div>
+                    <Sobre />
+                </div>
+                </>
             ) 
             }
         </div>
