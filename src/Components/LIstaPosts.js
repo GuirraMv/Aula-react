@@ -18,12 +18,13 @@ const ListaPosts = () => {
     <>
     <Header />
     <h2 className="titlepost">Posts mais recentes</h2>
+    <CardGroup className='p-3'>
     {cards &&
       cards.map((cards) => {
         return (
-        <div className="posts" key={cards.id}>
-          <CardGroup className='p-3'>
-          <Card className='card'>
+        
+        
+          <Card key={cards.id} className='card posts'>
           <NavLink to={"/Posts/"+cards.id}>
           <Card.Img className='imagem' variant="top" src={cards.photo} />
           <Card.Body className='body'>
@@ -31,11 +32,10 @@ const ListaPosts = () => {
           </Card.Body>
           </NavLink>
           </Card>
-          </CardGroup>
-        </div>
        )
       }) 
     }  
+    </CardGroup>
     <Sobre />
     </>
   )

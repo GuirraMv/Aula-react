@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react'
+import { useParams, useNavigate } from 'react-router-dom'
 import "./Materias.css";
 import Header from "./Header";
 import Sobre from "./Sobre";
@@ -7,11 +9,26 @@ import Col from 'react-bootstrap/Col'
 import Surf from "../asset/img/surf.jpg"
 import {NavLink} from 'react-router-dom';
 
-const Materias = () => {
+const Materias = (props) => {
+
+    const { id } = useParams();
+    const [materias, setMaterias] = useState();
+
+    useEffect(() => {
+        fetch("http://localhost:/lp2/api/materia/select-by-id/?id="+id)
+        .then((response) => response.json())
+        .then((data) => {
+            setMaterias(data)
+        })
+    }, [id] )
+    
     return (
-    <>
-    <Header />
-    <div className="Materias">
+        <>
+        {materias &&
+            (
+        <>        
+        <Header />
+        <div key={materias.id} className="Materias">
         <h2>Matérias mais recentes</h2>
         <Container>
         <Row>
@@ -30,6 +47,9 @@ const Materias = () => {
     </Container>
     </div>
     <Sobre />
+    </>
+    )
+}
     </>
     )
 }

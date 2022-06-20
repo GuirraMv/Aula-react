@@ -4,28 +4,46 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Surf from "../asset/img/surf.jpg"
 import {NavLink} from 'react-router-dom';
+import { useEffect, useState } from "react"
 
 const Materiashome = () => {
+    const [materias, setMaterias] = useState(null);
+    useEffect(()=> {
+        fetch("http://localhost/lp2/api/materia/select-all")
+        .then((response) => response.json())
+        .then((data) => setMaterias(data))
+    }, [])
+
     return(
     <>
-    <div className="materiashome">
+    {materias &&
+        materias.map((materia) => {
+            
+            return(
+                <div className="materiashome">
     <Container>
         <Row>
         <Col>
-            <NavLink to="/materias" ><h2 className="materiatitle">Matérias</h2></NavLink>
+        <NavLink to="materias" ><h2 className="materiatitle">Matérias</h2></NavLink>
             <div className="cardone">
-            <NavLink to="/materiaint" >
+            <NavLink to="/materia/:id" >
             <div className="title">
-                <h2>Atividades Radicais</h2>
+                <h2>{materia.title}</h2>
             </div>
-            <span className="teexto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span> 
-            <img src={Surf} alt="surf" />
+            <span className="teexto">{materia.descricao}</span> 
+            <img src={materia.photo} alt="surf" />
             </NavLink>
             </div>                    
         </Col>
         </Row>
     </Container>
     </div>
+
+        )
+        })
+    }
+    
+    
     </>
     )
 }

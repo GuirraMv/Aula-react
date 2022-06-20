@@ -196,5 +196,46 @@
       }
     ],
     "tests": []
+  },
+  {
+    "_id": "1188525e-f804-4056-a443-7571fe0e3766",
+    "colId": "1154129a-5419-40bd-90f2-d077ee705f93",
+    "containerId": "",
+    "name": "lp2/api/card/create",
+    "url": "http://localhost/lp2/api/materia/create",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2022-06-20T19:53:54.425Z",
+    "modified": "2022-06-20T19:53:54.425Z",
+    "headers": [
+      {
+        "name": "ACCESS-TOKEN",
+        "value": "0054c4074c5a1c328de262e5c8a1dcfa"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "title",
+          "value": "materia3"
+        },
+        {
+          "name": "descricao",
+          "value": "testes"
+        },
+        {
+          "name": "photo",
+          "value": "https://br.ign.com/one-piece-2/99352/news/one-piece-cosplay-de-boa-hancock-feito-por-brasileira-e-orgulho-pirata"
+        },
+        {
+          "name": "texto",
+          "value": "testeee"
+        }
+      ]
+    },
+    "tests": []
   }
 ]

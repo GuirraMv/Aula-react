@@ -244,11 +244,11 @@
     "colId": "history",
     "containerId": "",
     "name": "http://localhost/lp2/api/card/create",
-    "url": "http://localhost/lp2/api/card/create",
+    "url": "http://localhost/lp2/api/materia/update",
     "method": "POST",
     "sortNum": 0,
     "created": "2022-06-04T17:32:47.544Z",
-    "modified": "2022-06-14T20:03:08.183Z",
+    "modified": "2022-06-20T19:59:17.857Z",
     "headers": [
       {
         "name": "ACCESS-TOKEN",
@@ -261,20 +261,24 @@
       "raw": "",
       "form": [
         {
-          "name": "title",
-          "value": "One Piece"
-        },
-        {
-          "name": "descricao",
-          "value": "anime de qualidade, mais de mil episódios de pura adrenalina e diversão"
+          "name": "id",
+          "value": "3"
         },
         {
           "name": "photo",
-          "value": "https://br.ign.com/one-piece-2/99352/news/one-piece-cosplay-de-boa-hancock-feito-por-brasileira-e-orgulho-pirata"
+          "value": "https://t.ctcdn.com.br/WCmZ_LU_RoCZL1jCno7fE153Z_U=/400x400/smart/filters:format(webp)/i489932.jpeg"
+        },
+        {
+          "name": "title",
+          "value": "testeee3"
+        },
+        {
+          "name": "descricao",
+          "value": "testandoooooo0"
         },
         {
           "name": "texto",
-          "value": "Oneeeeeeee Pieceeeeee"
+          "value": "aefwagerhpsvp msppmóinózdifno"
         }
       ]
     },

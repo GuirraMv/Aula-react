@@ -5,7 +5,7 @@ import Home from "./Components/Home";
 import ListaPosts from "./Components/ListaPosts";
 import Posts from "./Components/Posts";
 import Materias from "./Components/Materias";
-import Login from "./Components/Login";
+import Admin from "./Components/Admin";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Route path="/posts/:id" element={<Posts />} />
         <Route path="/materias" element={<Materias />} />
        
-       <Route path='admin/' element={<Login />} />
+       <Route path='/admin/' element={<Admin />} />
       </Routes>
 
       </div>

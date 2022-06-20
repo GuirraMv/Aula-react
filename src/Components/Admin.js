@@ -4,7 +4,7 @@ import { NavLink} from 'react-router-dom';
 import {CardGroup} from 'react-bootstrap'
 import Card from 'react-bootstrap/Card'
 
-const Postshome = (props) => {
+const Admin = () => {
   const [cards, setCards] = useState(null);
   useEffect(() => {
     fetch("http://localhost/lp2/api/card/select-all")
@@ -14,7 +14,7 @@ const Postshome = (props) => {
 
   return (
     <>
-    <NavLink to="posts"><h1 className="Título">Posts</h1></NavLink>  
+    <h1 className="Título">Posts</h1>  
     {cards &&
       cards.map((cards) => {
         return (
@@ -29,25 +29,7 @@ const Postshome = (props) => {
                 <Card.Title className='titulo'>{cards.title}</Card.Title>
               </Card.Body>
             </NavLink>
-          </Card>
-
-          <Card className='card'>
-            <NavLink to="Posts" >
-              <Card.Img className='imagem' variant="top" src={cards.photo} />
-              <Card.Body className='body'>
-                <Card.Title className='titulo'>{cards.title}</Card.Title>
-              </Card.Body>
-            </NavLink>
-          </Card>
-
-          <Card className='card'>
-            <NavLink to="Posts" >
-              <Card.Img className='imagem' variant="top" src={cards.photo} />
-              <Card.Body className='body'>
-                <Card.Title className='titulo'>{cards.title}</Card.Title>
-              </Card.Body>
-            </NavLink>
-          </Card>
+          </Card>          
           </CardGroup>
         </div> 
         )}
@@ -56,4 +38,4 @@ const Postshome = (props) => {
     </>
   )
 }
-export default Postshome
+export default Admin
