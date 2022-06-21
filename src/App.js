@@ -7,6 +7,7 @@ import Posts from "./Components/Posts";
 import ListaMaterias from "./Components/ListaMateria";
 import Materias from "./Components/Materias";
 import Admin from "./Components/Admin";
+import CadastraCards from "./Components/CadastraCard";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/materias/:id" element={<Materias />} />
        {/* PARTE ADM */}
        <Route path='/admin/' element={<Admin />} />
+       <Route path='/cadastracards' element={<CadastraCards />} />
       </Routes>
 
       </div>

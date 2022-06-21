@@ -1,4 +1,4 @@
-import './Postshome.css'
+import './Admin.css'
 import { useState, useEffect } from "react"
 import { NavLink} from 'react-router-dom';
 import {CardGroup} from 'react-bootstrap'
@@ -6,6 +6,7 @@ import Card from 'react-bootstrap/Card'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import { BsFillPlusCircleFill } from "react-icons/bs";
 
 const Admin = () => {
   
@@ -23,9 +24,16 @@ const Admin = () => {
     .then((data) => setMaterias(data))
   }, [])
 
+  
+
   return (
     <>
-    <h1 className="Título">Posts</h1>  
+    <h1 className="Título">Posts</h1>
+    <div className='botao'>
+    <NavLink to={"/CadastraCards/"}>
+      <BsFillPlusCircleFill />
+    </NavLink>
+    </div>
     <CardGroup className='p-3'>
     {cards &&
       cards.map((cards) => {
