@@ -22,8 +22,6 @@ const ListaPosts = () => {
     {cards &&
       cards.map((cards) => {
         return (
-        
-        
           <Card key={cards.id} className='card posts'>
           <NavLink to={"/Posts/"+cards.id}>
           <Card.Img className='imagem' variant="top" src={cards.photo} />

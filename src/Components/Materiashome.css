@@ -33,9 +33,11 @@
 }
 
 .materiatitle{
+    background-color: #3E3E3F;
     color: aliceblue;
     display: flex;
     justify-content: center;
+    margin: 0%;
 }
 
 .teexto {

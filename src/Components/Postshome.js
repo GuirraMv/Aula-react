@@ -23,7 +23,7 @@ const Postshome = (props) => {
           <CardGroup className='p-3'>
           
           <Card className='card'> {cards.id}
-            <NavLink to="/posts/:id" >
+            <NavLink to={"/Posts/"+cards.id} >
               <Card.Img className='imagem' variant="top" src={cards.photo} />
               <Card.Body className='body'>
                 <Card.Title className='titulo'>{cards.title}</Card.Title>
@@ -32,7 +32,7 @@ const Postshome = (props) => {
           </Card>
 
           <Card className='card'>
-            <NavLink to="Posts" >
+            <NavLink to={"/Posts/"+cards.id} >
               <Card.Img className='imagem' variant="top" src={cards.photo} />
               <Card.Body className='body'>
                 <Card.Title className='titulo'>{cards.title}</Card.Title>
@@ -41,7 +41,7 @@ const Postshome = (props) => {
           </Card>
 
           <Card className='card'>
-            <NavLink to="Posts" >
+            <NavLink to={"/Posts/"+cards.id} >
               <Card.Img className='imagem' variant="top" src={cards.photo} />
               <Card.Body className='body'>
                 <Card.Title className='titulo'>{cards.title}</Card.Title>

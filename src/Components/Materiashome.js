@@ -2,7 +2,6 @@ import "./Materiashome.css"
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Surf from "../asset/img/surf.jpg"
 import {NavLink} from 'react-router-dom';
 import { useEffect, useState } from "react"
 
@@ -16,29 +15,27 @@ const Materiashome = () => {
 
     return(
     <>
+    <NavLink to="materias" ><h2 className="materiatitle">Matérias</h2></NavLink>
     {materias &&
-        materias.map((materia) => {
-            
-            return(
-                <div className="materiashome">
-    <Container>
+    materias.map((materia) => {
+        return(
+        <div className="materiashome" key={materia.id}>
+        <Container>
         <Row>
         <Col>
-        <NavLink to="materias" ><h2 className="materiatitle">Matérias</h2></NavLink>
+            <NavLink to={"/Materias/"+materia.id}>
             <div className="cardone">
-            <NavLink to="/materia/:id" >
-            <div className="title">
-                <h2>{materia.title}</h2>
-            </div>
-            <span className="teexto">{materia.descricao}</span> 
-            <img src={materia.photo} alt="surf" />
-            </NavLink>
+                <div className="title">
+                    <h2>{materia.title}</h2>
+                </div>
+                <span className="teexto">{materia.descricao}</span> 
+                <img src={materia.photo} alt="surf" />
             </div>                    
+            </NavLink>
         </Col>
         </Row>
     </Container>
     </div>
-
         )
         })
     }
