@@ -8,6 +8,7 @@ import ListaMaterias from "./Components/ListaMateria";
 import Materias from "./Components/Materias";
 import Admin from "./Components/Admin";
 import CadastraCards from "./Components/CadastraCard";
+import CadastraMaterias from "./Components/CadastraMateria";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
        {/* PARTE ADM */}
        <Route path='/admin/' element={<Admin />} />
        <Route path='/cadastracards' element={<CadastraCards />} />
+       <Route path='/cadastramaterias' element={<CadastraMaterias />} />
       </Routes>
 
       </div>

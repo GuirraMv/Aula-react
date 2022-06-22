@@ -51,6 +51,11 @@ const Admin = () => {
       }
       </CardGroup>
       <h2 className="materiatitle">Matérias</h2>
+      <div className='botao'>
+      <NavLink to={"/CadastraMaterias/"}>
+        <BsFillPlusCircleFill />
+      </NavLink>
+      </div>
       {materias &&
         materias.map((materias) => {
           return (
@@ -65,7 +70,7 @@ const Admin = () => {
               <h2>{materias.title}</h2>
               </div>
               <span className="teexto">{materias.descricao}</span> 
-              <img src={materias.photo} alt="surf" />
+              <img src={materias.photo} alt="teste"/>
               </div>                    
           </NavLink>
           </Col>
