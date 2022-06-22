@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react'
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import "./Materias.css";
 import Header from "./Header";
 import Sobre from "./Sobre";
 
 
-const Materias = (props) => {
+const Materias = () => {
 
     const { id } = useParams();
     const [materias, setMaterias] = useState();
@@ -26,7 +26,7 @@ const Materias = (props) => {
             <>
             <Header />
             <div key={materias.id} className="materias">
-                <img src={materias.photo} />
+                <img src={materias.photo} alt="foto"/>
                 <h2>{materias.title}</h2>
                 <div className="texto">{materias.texto}</div>        
             </div>

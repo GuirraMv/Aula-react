@@ -9,6 +9,8 @@ import Materias from "./Components/Materias";
 import Admin from "./Components/Admin";
 import CadastraCards from "./Components/CadastraCard";
 import CadastraMaterias from "./Components/CadastraMateria";
+import EditCards from "./Components/EditCards";
+import EditMaterias from "./Components/EditMateria";
 
 function App() {
   return (
@@ -24,8 +26,9 @@ function App() {
        <Route path='/admin/' element={<Admin />} />
        <Route path='/cadastracards' element={<CadastraCards />} />
        <Route path='/cadastramaterias' element={<CadastraMaterias />} />
+       <Route path='/editcards/:cardsId' element={<EditCards />} />
+       <Route path='/editmaterias/:materiasId' element={<EditMaterias />} />
       </Routes>
-
       </div>
     </>
   );

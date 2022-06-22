@@ -1,6 +1,6 @@
 import './Admin.css'
 import { useState, useEffect } from "react"
-import { NavLink} from 'react-router-dom';
+import { useNavigate, NavLink} from 'react-router-dom';
 import {CardGroup} from 'react-bootstrap'
 import Card from 'react-bootstrap/Card'
 import Container from 'react-bootstrap/Container'
@@ -9,6 +9,8 @@ import Col from 'react-bootstrap/Col'
 import { BsFillPlusCircleFill, BsPencil } from "react-icons/bs";
 
 const Admin = () => {
+
+  const navigate = useNavigate();
   
   const [cards, setCards] = useState(null);
   useEffect(() => {
@@ -39,6 +41,12 @@ const Admin = () => {
       cards.map((cards) => {
         return (
           <>
+          <div className="edit">
+          <BsPencil
+          onClick={()=> navigate('/editcards/'+cards.id)}
+          style={{cursor: 'pointer'}}
+          />
+          </div>
           
           <Card key={cards.id} className='card posts'> 
             <NavLink to={"/posts/"+cards.id} >
@@ -62,7 +70,13 @@ const Admin = () => {
       {materias &&
         materias.map((materias) => {
           return (
-
+            <>
+            <div className="edit">
+          <BsPencil
+          onClick={()=> navigate('/editmateria/'+materias.id)}
+          style={{cursor: 'pointer'}}
+          />
+          </div>
             <div className="materiashome" key={materias.id}>
           <Container>
           <Row>
@@ -80,6 +94,7 @@ const Admin = () => {
           </Row>
           </Container>
           </div>
+          </>
             )
         })
       }
