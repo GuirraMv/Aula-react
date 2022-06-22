@@ -6,7 +6,7 @@ import Card from 'react-bootstrap/Card'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import { BsFillPlusCircleFill } from "react-icons/bs";
+import { BsFillPlusCircleFill, BsPencil } from "react-icons/bs";
 
 const Admin = () => {
   
@@ -38,6 +38,8 @@ const Admin = () => {
     {cards &&
       cards.map((cards) => {
         return (
+          <>
+          
           <Card key={cards.id} className='card posts'> 
             <NavLink to={"/posts/"+cards.id} >
               <Card.Img className='imagem' variant="top" src={cards.photo} />
@@ -46,6 +48,7 @@ const Admin = () => {
               </Card.Body>
             </NavLink>
           </Card>
+          </>
         )}
         )
       }
