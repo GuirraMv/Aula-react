@@ -1,12 +1,13 @@
 import './Admin.css'
 import { useState, useEffect } from "react"
 import { useNavigate, NavLink} from 'react-router-dom';
-import {CardGroup} from 'react-bootstrap'
+import {Button, CardGroup} from 'react-bootstrap'
 import Card from 'react-bootstrap/Card'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import { BsFillPlusCircleFill, BsPencil } from "react-icons/bs";
+import Modal from 'react-bootstrap/Modal'
+import { BsFillPlusCircleFill, BsPencil, BsFillTrashFill } from "react-icons/bs";
 
 const Admin = () => {
 
@@ -26,6 +27,26 @@ const Admin = () => {
     .then((data) => setMaterias(data))
   }, [])
 
+  const handleTrashClick = (cardsId) => {
+    const formData = new FormData()
+    formData.append('id', cardsId)
+    const cardDelete = "http://localhost/lp2/api/card/delete"
+      fetch(cardDelete, {
+        method: 'POST',
+        body: formData
+      })
+      .then((response) => response.json())
+      .then((data) => {
+        alert(data.message)
+      })
+  }
+
+
+    const [show, setShow] = useState(false)
+    const handleClose = () => setShow(false)
+    const handleShow = () => setShow(true)
+  
+
   
 
   return (
@@ -44,6 +65,16 @@ const Admin = () => {
           <div className="edit">
           <BsPencil onClick={()=> navigate('/editcards/'+cards.id)} style={{cursor: 'pointer'}}/>
           </div>
+
+          
+            <Button onClick={handleShow} >
+              <BsFillTrashFill style={{cursor: 'pointer'}} />
+            </Button>
+
+            <Modal show={show} onHide={handleClose}>
+
+            </Modal>
+          
           
           <Card key={cards.id} className='card posts'> 
             <NavLink to={"/posts/"+cards.id} >
