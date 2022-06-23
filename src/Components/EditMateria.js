@@ -27,7 +27,7 @@ const EditMaterias = () => {
         )
         .then((response) => response.json())
         .then((data) => {
-            if (data?.materia?.id){
+            if (data?.materias?.id){
                 navigate('../')
             } else if(data?.message){
                 alert(data.message)
@@ -42,9 +42,9 @@ const EditMaterias = () => {
         {materias ? (
             <form onSubmit={(event) => handleSubmit(event)}>
                 <label>photo:</label><input type="text" name="photo" defaultValue={materias.photo} />
-                <label>title:</label><input type="texto" name="title" defaultValue={materias.title} />
-                <label>descrição</label>
-                <label>texto:</label>
+                <label>title:</label><input type="text" name="title" defaultValue={materias.title} />
+                <label>descrição</label><input type="text" name="descrição" defaultValue={materias.descrição} />
+                <label>texto:</label><input type="text" name="texto" defaultValue={materias.texto} />
                 <input type="submit" value="Editar" />
             </form>
         )

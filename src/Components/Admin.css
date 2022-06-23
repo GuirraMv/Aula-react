@@ -8,3 +8,11 @@
 .edit {
     color: aliceblue;
 }
+
+.editmat {
+    color: aliceblue;
+    background-color: #3E3E3F;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}

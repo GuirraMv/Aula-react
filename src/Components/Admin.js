@@ -42,10 +42,7 @@ const Admin = () => {
         return (
           <>
           <div className="edit">
-          <BsPencil
-          onClick={()=> navigate('/editcards/'+cards.id)}
-          style={{cursor: 'pointer'}}
-          />
+          <BsPencil onClick={()=> navigate('/editcards/'+cards.id)} style={{cursor: 'pointer'}}/>
           </div>
           
           <Card key={cards.id} className='card posts'> 
@@ -71,31 +68,28 @@ const Admin = () => {
         materias.map((materias) => {
           return (
             <>
-            <div className="edit">
-          <BsPencil
-          onClick={()=> navigate('/editmateria/'+materias.id)}
-          style={{cursor: 'pointer'}}
-          />
-          </div>
             <div className="materiashome" key={materias.id}>
-          <Container>
-          <Row>
-          <Col>
-          <NavLink to={"/Materias/"+materias.id}>
-              <div className="cardone">
-              <div className="title">
-              <h2>{materias.title}</h2>
-              </div>
-              <span className="teexto">{materias.descricao}</span> 
-              <img src={materias.photo} alt="teste"/>
-              </div>                    
-          </NavLink>
-          </Col>
-          </Row>
-          </Container>
-          </div>
-          </>
-            )
+            <Container>
+            <Row>
+            <Col>
+            <div className="editmat">
+              <BsPencil onClick={()=> navigate('/editmaterias/'+materias.id)} style={{cursor: 'pointer'}}/>
+            </div>
+              <NavLink to={"/Materias/"+materias.id}>
+                <div className="cardone">
+                <div className="title">
+                  <h2>{materias.title}</h2>
+                </div>
+                <span className="teexto">{materias.descricao}</span> 
+                <img src={materias.photo} alt="teste"/>
+                </div>                    
+              </NavLink>
+            </Col>
+            </Row>
+            </Container>
+            </div>
+            </>
+          )
         })
       }
     </>
