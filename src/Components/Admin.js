@@ -38,6 +38,8 @@ const Admin = () => {
       .then((response) => response.json())
       .then((data) => {
         alert(data.message)
+        let CardFiltered = Card.filter((cards) => {return cards.id !== cardsId})
+        setCards(CardFiltered)
       })
   }
 
