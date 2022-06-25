@@ -1,7 +1,7 @@
 import './Admin.css'
 import { useState, useEffect } from "react"
 import { useNavigate, NavLink} from 'react-router-dom';
-import {Button, CardGroup} from 'react-bootstrap'
+import {Button, CardGroup, ModalBody, ModalHeader, ModalTitle} from 'react-bootstrap'
 import Card from 'react-bootstrap/Card'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -72,7 +72,18 @@ const Admin = () => {
             </Button>
 
             <Modal show={show} onHide={handleClose}>
-
+              <ModalHeader closeButton>
+                <ModalTitle>TEM CERTEZA DE QUE DESEJA EXCLUIR?</ModalTitle>
+              </ModalHeader>
+              <ModalBody>testando moldal</ModalBody>
+              <Modal.Footer>
+                <Button variant="secondary" onClick={handleClose}>
+                  Cancelar
+                </Button>
+                <Button variant="danger" onClick={() => handleTrashClick(cards.id)}>
+                  SIM
+                </Button>
+              </Modal.Footer>  
             </Modal>
           
           

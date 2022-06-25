@@ -15,7 +15,7 @@ const Materiashome = () => {
 
     return(
     <>
-    <NavLink to="materias" ><h2 className="materiatitle">Matérias</h2></NavLink>
+    <NavLink to={"/listamaterias"} ><h2 className="materiatitle">Matérias</h2></NavLink>
     {materias &&
     materias.map((materia) => {
         return(

@@ -14,7 +14,7 @@ const Postshome = (props) => {
 
   return (
     <>
-    <NavLink to="posts"><h1 className="Título">Posts</h1></NavLink>  
+    <NavLink to={"/listaposts"}><h1 className="Título">Posts</h1></NavLink>  
     {cards &&
       cards.map((cards) => {
         return (
