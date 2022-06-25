@@ -31,6 +31,7 @@ const EditCards = () => {
                 navigate('../')
             } else if(data?.message){
                 alert(data.message)
+                navigate('/admin')
             } else {
                 console.log(data)
             }

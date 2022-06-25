@@ -1,4 +1,5 @@
 import { useRef } from "react"
+import { useNavigate } from "react-router-dom"
 
 
 const CadastraCards = ({cards, setCards}) => {
@@ -6,6 +7,7 @@ const CadastraCards = ({cards, setCards}) => {
     const titleRef = useRef()
     const descricaoRef = useRef()
     const textoRef = useRef()
+    const navigate = useNavigate()
     
 
     const handleSubmit = (event) => {
@@ -27,6 +29,7 @@ const CadastraCards = ({cards, setCards}) => {
         descricaoRef.current.value = ''
         textoRef.current.value = ''
         alert(data.message)
+        navigate('/admin')
       })
     }
 

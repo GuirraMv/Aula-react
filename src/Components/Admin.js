@@ -1,12 +1,11 @@
 import './Admin.css'
 import { useState, useEffect } from "react"
 import { useNavigate, NavLink} from 'react-router-dom';
-import {Button, CardGroup, ModalBody, ModalHeader, ModalTitle} from 'react-bootstrap'
+import {Button, CardGroup} from 'react-bootstrap'
 import Card from 'react-bootstrap/Card'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Modal from 'react-bootstrap/Modal'
 import { BsFillPlusCircleFill, BsPencil, BsFillTrashFill } from "react-icons/bs";
 
 const Admin = () => {
@@ -38,18 +37,27 @@ const Admin = () => {
       .then((response) => response.json())
       .then((data) => {
         alert(data.message)
-        let CardFiltered = Card.filter((cards) => {return cards.id !== cardsId})
-        setCards(CardFiltered)
+        
       })
   }
 
+  const handleTrashMateria = (materiasId) => {
+    const formData = new FormData()
+    formData.append('id', materiasId)
+    const materiaDelete = "http://localhost/lp2/api/materia/delete"
+    fetch(materiaDelete, {
+      method: 'POST',
+      body: formData
+    })
+    .then((response) => response.json())
+    .then((data) => {
+      alert(data.message)
+    })
+  }
 
-    const [show, setShow] = useState(false)
-    const handleClose = () => setShow(false)
-    const handleShow = () => setShow(true)
-  
-
-  
+  const reloadPage = () => {
+    window.location.reload(false)
+  }
 
   return (
     <>
@@ -65,29 +73,15 @@ const Admin = () => {
         return (
           <>
           <div className="edit">
-          <BsPencil onClick={()=> navigate('/editcards/'+cards.id)} style={{cursor: 'pointer'}}/>
+            <BsPencil onClick={()=> navigate('/editcards/'+cards.id)} style={{cursor: 'pointer'}}/>
           </div>
 
-          
-            <Button onClick={handleShow} >
-              <BsFillTrashFill style={{cursor: 'pointer'}} />
-            </Button>
-
-            <Modal show={show} onHide={handleClose}>
-              <ModalHeader closeButton>
-                <ModalTitle>TEM CERTEZA DE QUE DESEJA EXCLUIR?</ModalTitle>
-              </ModalHeader>
-              <ModalBody>testando moldal</ModalBody>
-              <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
-                  Cancelar
-                </Button>
-                <Button variant="danger" onClick={() => handleTrashClick(cards.id)}>
-                  SIM
-                </Button>
-              </Modal.Footer>  
-            </Modal>
-          
+          <Button 
+          onClick={() => {handleTrashClick(cards.id);
+          reloadPage()}
+          }>
+            <BsFillTrashFill style={{cursor: 'pointer'}} />
+          </Button>
           
           <Card key={cards.id} className='card posts'> 
             <NavLink to={"/posts/"+cards.id} >
@@ -119,6 +113,12 @@ const Admin = () => {
             <div className="editmat">
               <BsPencil onClick={()=> navigate('/editmaterias/'+materias.id)} style={{cursor: 'pointer'}}/>
             </div>
+            <Button 
+            onClick={() => {handleTrashMateria(materias.id);
+            reloadPage()}
+            }>
+              <BsFillTrashFill style={{cursor: 'pointer'}} />
+            </Button>
               <NavLink to={"/Materias/"+materias.id}>
                 <div className="cardone">
                 <div className="title">
