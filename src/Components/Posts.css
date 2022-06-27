@@ -1,0 +1,22 @@
+.postsbk {
+    background-color: #302D2D;
+    color: #fff;
+}
+
+.titlecard {
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+    width: 100%;
+}
+
+.foto {
+    display: flex;
+    justify-content: center;
+}
+
+.textocard {
+    display: flex;
+    align-items: center;
+    margin: 0 10px 0 10px;
+}

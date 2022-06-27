@@ -23,11 +23,13 @@ const Posts = () => {
             {cards &&
             (
                 <>
-                <div key={cards.id} className="a">
+                <div key={cards.id} className="postsbk">
                     <Header />
-                    <h2>{cards.title}</h2>
-                    <img src={cards.photo} alt="foto" />
-                    <div className="texto">{cards.texto}</div>
+                    <h2 className="titlecard">{cards.title}</h2>
+                    <div className="foto">
+                        <img src={cards.photo} alt="foto" />
+                    </div>
+                    <div className="textocard">{cards.texto}</div>
                     <Sobre />
                 </div>
                 </>
