@@ -1,12 +1,25 @@
-.Materias {
+.materias {
     background-color: #333334;
 }
 
-.Materias h2 {
+.materias h2 {
     font-weight: bold;
     font-size: 20px;
     display: flex;
     justify-content: center;
     color: #fff;
     
+}
+
+.textomat {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin: 0 10px 0 10px;
+}
+
+.materiaimg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

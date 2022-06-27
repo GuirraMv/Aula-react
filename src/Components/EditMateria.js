@@ -19,7 +19,7 @@ const EditMaterias = () => {
         formData.append('id', materiasId)
         formData.append('photo', event.target[0].value)
         formData.append('title', event.target[1].value)
-        formData.append('description', event.target[2].value)
+        formData.append('descricao', event.target[2].value)
         formData.append('texto', event.target[3].value)
         fetch(
             "http://localhost/lp2/api/materia/update",

@@ -26,9 +26,11 @@ const Materias = () => {
             <>
             <Header />
             <div key={materias.id} className="materias">
-                <img src={materias.photo} alt="foto"/>
-                <h2>{materias.title}</h2>
-                <div className="texto">{materias.texto}</div>        
+                <div className="materiaimg">
+                    <img src={materias.photo} alt="foto"/>
+                </div>
+                <h2 className="materias">{materias.title}</h2>
+                <div className="textomat">{materias.texto}</div>        
             </div>
             <Sobre />
         </>
