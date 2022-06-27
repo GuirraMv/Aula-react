@@ -113,12 +113,14 @@ const Admin = () => {
             <div className="editmat">
               <BsPencil onClick={()=> navigate('/editmaterias/'+materias.id)} style={{cursor: 'pointer'}}/>
             </div>
+            
             <Button 
             onClick={() => {handleTrashMateria(materias.id);
             reloadPage()}
             }>
               <BsFillTrashFill style={{cursor: 'pointer'}} />
             </Button>
+              
               <NavLink to={"/Materias/"+materias.id}>
                 <div className="cardone">
                 <div className="title">

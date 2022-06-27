@@ -31,6 +31,7 @@ const EditMaterias = () => {
                 navigate('../')
             } else if(data?.message){
                 alert(data.message)
+                navigate('/admin')
             } else {
                 console.log(data)
             }
@@ -49,7 +50,7 @@ const EditMaterias = () => {
             </form>
         )
         :
-            (<p>materia não encontrado!</p>)
+            (<p>Matéria não encontrado!</p>)
         }
         </>
     )
