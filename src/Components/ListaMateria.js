@@ -5,7 +5,6 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Header from "./Header"
-import Sobre from "./Sobre"
 
 const Listamaterias = () => {
     const [materias, setMaterias] = useState(null);
@@ -44,8 +43,6 @@ const Listamaterias = () => {
             )
         })
     }
-    <Sobre />
-
         </>
     )
 }

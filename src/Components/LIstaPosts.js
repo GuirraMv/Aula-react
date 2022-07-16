@@ -4,7 +4,6 @@ import Card from 'react-bootstrap/Card'
 import {CardGroup} from 'react-bootstrap'
 import { NavLink} from 'react-router-dom'
 import Header from "./Header"
-import Sobre from "./Sobre"
 
 const ListaPosts = () => {
   const [cards, setCards] = useState(null);
@@ -34,7 +33,6 @@ const ListaPosts = () => {
       }) 
     }  
     </CardGroup>
-    <Sobre />
     </>
   )
 }

@@ -11,6 +11,7 @@ import CadastraCards from "./Components/CadastraCard";
 import CadastraMaterias from "./Components/CadastraMateria";
 import EditCards from "./Components/EditCards";
 import EditMaterias from "./Components/EditMateria";
+import Sobre from "./Components/Sobre";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/posts/:id" element={<Posts />} />
         <Route path="/listamaterias" element={<ListaMaterias />} />
         <Route path="/materias/:id" element={<Materias />} />
+        <Route path="/sobre" element={<Sobre />} />
        {/* PARTE ADM */}
        <Route path='/admin/' element={<Admin />} />
        <Route path='/cadastracards' element={<CadastraCards />} />

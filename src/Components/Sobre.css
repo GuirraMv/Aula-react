@@ -2,6 +2,7 @@
     background-color: #4D4D4E;
     width: 100%;
     padding: 0%;
+    margin: 0%;
 }
 
 .navbar {
@@ -12,7 +13,6 @@
     background-color: #4D4D4E;
     width: 100%;
     display: flex;
-    
     justify-content: center;
 }
 

@@ -1,9 +1,12 @@
 import "./Sobre.css"
 import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
+import Header from "./Header"
+
 const Sobre = () => {
     return (
         <>
+        <Header/>
         <div className="Sobre">
         <Navbar>
         <Container fluid id="container">
